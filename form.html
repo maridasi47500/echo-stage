@@ -63,6 +63,17 @@
     </select>
     <input type="submit" value="Lancer EchoStage" />
   </form>
+  <h1>Choisis ton maquillage ou CSS</h1>
+  <form action="/launch-echostage" method="POST">
+    <label for="region">Sélectionne un css pour tout activer avec LLM :</label>
+    <select id="css" name="css" required>
+      <option value="">-- Choisir un css --</option>
+      <option value="css1">css1</option>
+      <option value="css2">css2</option>
+      <option value="css3">css3</option>
+    </select>
+    <input type="submit" value="Lancer EchoStage" />
+  </form>
 </body>
 </html>
 
