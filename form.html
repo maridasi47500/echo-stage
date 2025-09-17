@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choisir une région — EchoStage</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #1e1e2f, #3a3a5f);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 1em;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2em;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
+    select, input[type="submit"] {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1.5em;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    select {
+      background-color: #2e2e4f;
+      color: #fff;
+    }
+    input[type="submit"] {
+      background-color: #ff66cc;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #ff3399;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎭 EchoStage — Choisis ta région</h1>
+  <form action="/launch-echostage" method="POST">
+    <label for="region">Sélectionne une région pour activer EchoStage avec LLM :</label>
+    <select id="region" name="region" required>
+      <option value="">-- Choisir une région --</option>
+      <option value="berlin">🏰 Berlin, Allemagne</option>
+      <option value="brooklyn">🌆 Brooklyn, New York</option>
+      <option value="echoverse">🪐 EchoVerse (fictif)</option>
+    </select>
+    <input type="submit" value="Lancer EchoStage" />
+  </form>
+</body>
+</html>
+
